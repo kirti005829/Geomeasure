@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document><name>Transmission corridor</name>
+<Placemark><name>HVDC corridor (Ahmedabad → Kolkata, illustrative)</name><ExtendedData><Data name="voltage"><value>±800 kV</value></Data></ExtendedData><LineString><coordinates>72.58,23.02,0 75.86,22.72,0 79.08,21.15,0 81.63,21.25,0 85.32,23.34,0 88.36,22.57,0</coordinates></LineString></Placemark><Placemark><name>Right-of-way survey strip (1 km wide, 2° long)</name><Polygon><outerBoundaryIs><LinearRing><coordinates>78.0,21.0,0 80.0,21.0,0 80.0,21.009,0 78.0,21.009,0 78.0,21.0,0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+</Document></kml>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Continental corridor</name>
+  <Placemark><name>Study region (40° x 20° box)</name>
+    <Polygon><outerBoundaryIs><LinearRing><coordinates>60,5,0 100,5,0 100,25,0 60,25,0 60,5,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark><name>Mumbai to Kolkata (straight line)</name>
+    <LineString><coordinates>72.8777,19.0760 88.3639,22.5726</coordinates></LineString>
+  </Placemark>
+  <Placemark><name>High-Arctic area of interest (85-86°N)</name>
+    <Polygon><outerBoundaryIs><LinearRing><coordinates>10,85,0 20,85,0 20,86,0 10,86,0 10,85,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Document></kml>

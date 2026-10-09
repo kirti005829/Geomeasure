@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document><name>Messy geometries</name>
+<Placemark><name>Valid square</name><Polygon><outerBoundaryIs><LinearRing><coordinates>77.59,12.97,0 77.591,12.97,0 77.591,12.971,0 77.59,12.971,0 77.59,12.97,0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+<Placemark><name>Bow-tie (self-intersecting)</name><Polygon><outerBoundaryIs><LinearRing><coordinates>77.6,12.97,0 77.601,12.971,0 77.601,12.97,0 77.6,12.971,0 77.6,12.97,0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+<Placemark><name>Ring with 2 points</name><Polygon><outerBoundaryIs><LinearRing><coordinates>77.6,12.9 77.61,12.91</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+<Placemark><name>Empty coordinates</name><LineString><coordinates> </coordinates></LineString></Placemark>
+<Placemark><name>Spaces after commas</name><LineString><coordinates>77.59, 12.97, 0   77.60, 12.97, 0</coordinates></LineString></Placemark>
+<Placemark><name>Mixed collection</name><MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>77.59,12.97,0 77.591,12.97,0 77.591,12.971,0 77.59,12.971,0 77.59,12.97,0</coordinates></LinearRing></outerBoundaryIs></Polygon><LineString><coordinates>77.59,12.97 77.59,12.98</coordinates></LineString><Point><coordinates>77.595,12.975</coordinates></Point></MultiGeometry></Placemark>
+<Placemark><name>3D model</name><Model/></Placemark>
+<Placemark><name>No geometry at all</name><description>Just a note</description></Placemark>
+</Document></kml>

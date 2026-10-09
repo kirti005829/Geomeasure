@@ -1,0 +1,43 @@
+### GeoMeasure API - click "Send Request" above each block (VS Code REST Client extension)
+@base = http://127.0.0.1:8000
+
+### Health
+GET {{base}}/health
+
+### Upload a KML
+# @name upload
+POST {{base}}/api/files/
+Content-Type: multipart/form-data; boundary=b
+
+--b
+Content-Disposition: form-data; name="file"; filename="bengaluru_site_survey.kml"
+Content-Type: application/vnd.google-earth.kml+xml
+
+< ./samples/bengaluru_site_survey.kml
+--b--
+
+### File information
+GET {{base}}/api/files/{{upload.response.body.id}}/
+
+### Measurements (projected, default)
+GET {{base}}/api/files/{{upload.response.body.id}}/measurements/
+
+### Measurements (geodesic as primary), polygons only
+GET {{base}}/api/files/{{upload.response.body.id}}/measurements/?method=geodesic&geometry_type=Polygon
+
+### Features with geometry, CRS and attributes
+GET {{base}}/api/files/{{upload.response.body.id}}/features/?limit=5
+
+### GeoJSON export (open in QGIS / geojson.io)
+GET {{base}}/api/files/{{upload.response.body.id}}/geojson/
+
+### Upload a zipped shapefile in UTM 43N
+POST {{base}}/api/files/
+Content-Type: multipart/form-data; boundary=b
+
+--b
+Content-Disposition: form-data; name="file"; filename="quarry_site_utm43n.zip"
+Content-Type: application/zip
+
+< ./samples/quarry_site_utm43n.zip
+--b--

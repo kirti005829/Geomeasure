@@ -1,0 +1,14 @@
+# Web
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic-settings>=2.4
+# Persistence
+SQLAlchemy>=2.0.30,<3.0
+# Geospatial (all pure wheels - no GDAL needed, installs cleanly on Windows/macOS/Linux)
+shapely>=2.0.4,<3.0
+pyproj>=3.6,<4.0
+pyshp>=2.3.1
+numpy>=1.26
+# Security: safe XML parsing for KML
+defusedxml>=0.7.1
